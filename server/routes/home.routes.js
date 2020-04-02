@@ -7,4 +7,8 @@ router.get('/', (req,res,next) => {
   res.status(200).json('HOME page is working!');
 })
 
+router.get('/logged', (req, res, next) => {
+  res.status(200).json('You are logged in =)')
+})
+
 module.exports = router;
