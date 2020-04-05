@@ -6,10 +6,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const passport = require('passport');
+const bcrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('./models/user.model');
 const indexRoutes = require('./routes/home.routes');
 const authRoutes = require('./routes/auth.routes');
+
 
 const app = express();
 const server = http.createServer(app);
